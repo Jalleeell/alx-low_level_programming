@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: A c program that checks if the number n is ositive or negative
+ * Description: A c program that checks if a statement is true or false
  *
  * Return: 0 (success)
 */
@@ -23,12 +23,13 @@ int main(void)
 	/* else if the condition is true then print the following */
 	}
 		else if (n == 0)
-	{
+		{
 		printf("%d is zero\n", n);
 	/* else print the following */
-	}
-		else
+		}
+	else
 	{
 		printf("%d is negative\n", n);
+	}
 	return (0);
 }

@@ -5,15 +5,15 @@
  * @s: parameter
  *
  * return:0
-*/
+ */
 
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+	if (*s)
 	{
-		return;
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-
-	_putchar(*s);
-	_puts_recursion(s + 1);
+	else
+		_putchar('\n');
 }

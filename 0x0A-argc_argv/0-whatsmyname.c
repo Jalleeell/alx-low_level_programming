@@ -1,14 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int u;
+	(void)argc;
+	printf("%s\n", argv[0]);
 
-	{
-		for (u = 0; u < argc; u++)
-		{
-			printf("%s\n", argv[u]);
-		}
-	}
 	return (0);
 }
